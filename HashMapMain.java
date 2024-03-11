@@ -1,5 +1,4 @@
 package com.guvi.task4;
-
 public class HashMapMain {
 	public static void main(String[] args) {
         //calling methods
@@ -9,7 +8,6 @@ public class HashMapMain {
 		hash.removeStudent();
 		hash.displayStudent();
 	}
-
 }
 /*
 Output:
