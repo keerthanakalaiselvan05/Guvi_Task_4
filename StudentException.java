@@ -1,13 +1,10 @@
 package com.guvi.task4;
-
 import java.util.Scanner;
-
 public class StudentException {
-
 	public static void main(String[] args) {
         //getting input from the user
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Namee :");
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Namee :");
         String name=sc.next();
         System.out.println("Enter Course :");
         String course=sc.next();
@@ -17,27 +14,27 @@ public class StudentException {
         int age=sc.nextInt();	
         Student student=new Student(name,course,rollno,age);
         System.out.println("Name: "+student.getName()+" || "+"Course: "+student.getCourse()+" || "+"RollNo: "+student.getRollno()+" || "+"Age: "+student.getAge());
-		//try-catch block to handle the exception
+	//try-catch block to handle the exception
         try {      
              student.showAge();
-		 } 
+	    } 
         catch(AgeNotWithinRangeException e)
-		{
-			System.out.println("AgeNotWithinRange Exception caught : "+e.getMessage());
-		}
-		try {
-			student.showName();
-		}
-		catch(NameNotValidException e)
-		{
-			System.out.println("NameNotValid Exception caught : "+e.getMessage());	
-		}
-		}
+            {
+	     System.out.println("AgeNotWithinRange Exception caught : "+e.getMessage());
+	    }
+	try {
+	    student.showName();
+	    }
+        catch(NameNotValidException e)
+            {
+	    System.out.println("NameNotValid Exception caught : "+e.getMessage());	
+	    }
+	 }
 	}
 
 /*output:
 	
-	    Enter Namee:
+	        Enter Namee:
 		Keerthu@12
 		Enter Course :
 		CSE
