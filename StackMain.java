@@ -1,10 +1,8 @@
 package com.guvi.task4;
-
 import java.util.EmptyStackException;
 import java.util.Stack;
 
 public class StackMain {
-
 	Stack<Integer>stack=new Stack();
 	//method to push elements onto the stack
 	public void pushToStack()
@@ -29,8 +27,7 @@ public class StackMain {
 	//method to check whether stack is empty or not
 	public boolean Empty()
 	{
-		return stack.empty();
-		
+		return stack.empty();	
 	}
 	public static void main(String[] args) {
 		StackMain sm=new StackMain();
@@ -39,9 +36,7 @@ public class StackMain {
 		//when we try to remove from an empty stack it will throw an exception
 		//sm.popFromStack();
 		System.out.println("Stack is Empty :"+sm.Empty());
-
 	}
-
 }
 
 /*
