@@ -10,18 +10,18 @@ public class Array {
 		System.out.println("Enter the day position : ");
 		int position=sc.nextInt();
 		//try-catch block to handle the exception
-	    try {
+	        try {
 		for(int i=0;i<array.length;i++)
-	      {
+	        {
 		  if(position==i)
 		  {
-	       System.out.println("Day Name is : "+array[i]);
-	      }
+	        System.out.println("Day Name is : "+array[i]);
+	        }
 		  else if(position>=array.length)
 		  {
 	   	   throw new ArrayIndexOutOfBoundsException("Index is out of range...");	
 		  }
-	      }
+	        }
 		 }
 		 catch(ArrayIndexOutOfBoundsException e)
 		 {
