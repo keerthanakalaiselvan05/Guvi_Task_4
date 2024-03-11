@@ -12,10 +12,10 @@ public class Voter {
 		this.voterID=voterID;
 		this.name=name;
 		this.age=age;
-	    show();
+	        show();
 		}
 	//try-catch block to handle the Invalid age exception
-	   public void show()
+	       public void show()
 		{
 		try {
 		if(age<18)
@@ -31,7 +31,7 @@ public class Voter {
 			System.out.println("InValidAge Exception caught : "+e.getMessage());
 		}
 		}
-	public static void main(String[] args) throws Exception {
+	       public static void main(String[] args) throws Exception {
 
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the VoterID : ");
